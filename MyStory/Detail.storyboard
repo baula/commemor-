@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="amL-84-av8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Post Detail View Controller-->
+        <scene sceneID="YEK-WI-Gzd">
+            <objects>
+                <viewController id="amL-84-av8" customClass="PostDetailViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CGv-W2-92x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="k4J-Xh-508">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="wp6-tw-rYd">
+                                        <rect key="frame" x="0.0" y="62" width="375" height="605"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="dt6-HG-PYh">
+                                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <items>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="g2G-80-dvO"/>
+                                            <barButtonItem style="plain" id="RbO-Rb-kkm">
+                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sdx-3C-oTR">
+                                                    <rect key="frame" x="41" y="8" width="28" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" red="0.1333333333" green="0.6705882353" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" image="save"/>
+                                                    <connections>
+                                                        <action selector="onSave:" destination="amL-84-av8" eventType="touchUpInside" id="sb8-Vr-VXE"/>
+                                                    </connections>
+                                                </button>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="QuM-rP-PK9"/>
+                                            <barButtonItem style="plain" id="gZ5-Cr-Rnl">
+                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XTY-ID-Soh">
+                                                    <rect key="frame" x="103" y="6" width="32" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" red="0.1333333333" green="0.6705882353" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Email" image="email"/>
+                                                    <connections>
+                                                        <action selector="onEmailButton:" destination="amL-84-av8" eventType="touchUpInside" id="yao-5I-II6"/>
+                                                    </connections>
+                                                </button>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="sHM-w1-8bU"/>
+                                            <barButtonItem style="plain" id="z1W-Cq-tKw">
+                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qpM-sh-sfa">
+                                                    <rect key="frame" x="170" y="6" width="32" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" red="0.1333333333" green="0.6705882353" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Save" image="sms"/>
+                                                    <connections>
+                                                        <action selector="onMessageButton:" destination="amL-84-av8" eventType="touchUpInside" id="n5U-XW-7e5"/>
+                                                    </connections>
+                                                </button>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="X5P-hQ-oaE"/>
+                                            <barButtonItem style="plain" id="RdI-py-1M2">
+                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6Uw-KE-ZSq">
+                                                    <rect key="frame" x="236" y="6" width="32" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" red="0.1333333333" green="0.6705882353" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" image="facebook"/>
+                                                    <connections>
+                                                        <action selector="postFacebook:" destination="amL-84-av8" eventType="touchUpInside" id="eiB-O3-5IT"/>
+                                                    </connections>
+                                                </button>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="TsG-Kb-HbS"/>
+                                            <barButtonItem image="twitter" style="plain" id="uPH-iY-kkv">
+                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ve2-A7-3Za">
+                                                    <rect key="frame" x="303" y="6" width="32" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" red="0.1333333333" green="0.6705882353" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Button" image="twitter"/>
+                                                    <connections>
+                                                        <action selector="postTwitter:" destination="amL-84-av8" eventType="touchUpInside" id="nfU-dp-3WE"/>
+                                                    </connections>
+                                                </button>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="oUS-Eb-MHp"/>
+                                        </items>
+                                    </toolbar>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" id="2DU-xg-lEd">
+                                        <rect key="frame" x="8" y="589" width="359" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tN1-81-z7L">
+                                                <rect key="frame" x="0.0" y="3" width="359" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="6Nu-f0-cN1">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="5hU-Vk-hh4">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bhf-EF-oLv">
+                                <rect key="frame" x="135" y="-98" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="trash-white">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onDeleteButton:" destination="amL-84-av8" eventType="touchUpInside" id="YWc-wD-13R"/>
+                                </connections>
+                            </button>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="detailImageView" destination="wp6-tw-rYd" id="W6F-eK-TWK"/>
+                        <outlet property="postView" destination="k4J-Xh-508" id="9eu-2W-Qib"/>
+                        <outlet property="tagsLabel" destination="tN1-81-z7L" id="j5e-S1-8g4"/>
+                        <outlet property="tagsScrollView" destination="2DU-xg-lEd" id="h8L-0J-g0M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqo-4c-iwo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1162.5" y="1233.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="email" width="240" height="240"/>
+        <image name="facebook" width="240" height="240"/>
+        <image name="save" width="240" height="240"/>
+        <image name="sms" width="240" height="240"/>
+        <image name="trash-white" width="240" height="240"/>
+        <image name="twitter" width="240" height="240"/>
+    </resources>
+</document>
